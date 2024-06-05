@@ -22,7 +22,7 @@ public class MyArrayListTest {
         list2.add(0);
         list2.add(-14);
 
-        String result = list2.getTheLastElem()
+        String result = list2.getTheLastElem();
 
         String expectedMessage = "Index: 2, Element: -14";
 
