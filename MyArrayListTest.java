@@ -22,13 +22,10 @@ public class MyArrayListTest {
         list2.add(0);
         list2.add(-14);
 
-        Exception exception = assertThrows(IndexOutOfBoundsException.class, () -> {
-            list2.get(3);
-        });
+        String result = list2.getTheLastElem()
 
-        String expectedMessage = "Index: 3, Size: 3";
-        String actualMessage = exception.getMessage();
+        String expectedMessage = "Index: 2, Element: -14";
 
-        assertTrue(actualMessage.contains(expectedMessage));
+        assertTrue(result.contains(expectedMessage));
     }
 }
