@@ -25,12 +25,8 @@ public class MyArrayList {
         System.out.println();
     }
 
-    public static void main(String[] args) {
-        try {
-            System.out.println("Element at the last index: " + list.get(2));
-        } catch (IndexOutOfBoundsException e) {
-            System.out.println("Caught an IndexOutOfBoundsException!");
-        }
+    public String getTheLastElem() {
+        System.out.println("Element at the last index: " + list.get(list.size()));
     }
 }
 
