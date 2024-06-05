@@ -26,7 +26,7 @@ public class MyArrayList {
     }
 
     public String getTheLastElem() {
-        System.out.println("Element at the last index: " + list.get(list.size()));
+        return "Element at the last index: " + list.get(list.size());
     }
 }
 
