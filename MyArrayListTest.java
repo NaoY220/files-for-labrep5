@@ -24,7 +24,7 @@ public class MyArrayListTest {
 
         String result = list2.getTheLastElem();
 
-        String expectedMessage = "Index: 2, Element: -14";
+        String expectedMessage = "Element at the last index: -14";
 
         assertTrue(result.contains(expectedMessage));
     }
