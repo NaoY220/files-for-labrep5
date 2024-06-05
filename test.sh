@@ -1,5 +1,5 @@
-javac -cp .:path/to/junit-jupiter-api-5.7.1.jar:path/to/junit-jupiter-engine-5.7.1.jar MyArrayList.java MyArrayListTest.java
-java -cp .:path/to/junit-jupiter-api-5.7.1.jar:path/to/junit-jupiter-engine-5.7.1.jar org.junit.platform.console.ConsoleLauncher --select-class MyArrayListTest
+javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java
+java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore MyArrayListTest
 
 if [[ $? -eq 0 ]]; then
     echo "yay"
