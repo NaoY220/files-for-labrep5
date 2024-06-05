@@ -26,18 +26,11 @@ public class MyArrayList {
     }
 
     public static void main(String[] args) {
-        MyArrayList list = new MyArrayList();
-
-        list.add(args[0]);
-        list.add(args[1]);
-
         try {
             System.out.println("Element at the last index: " + list.get(2));
         } catch (IndexOutOfBoundsException e) {
             System.out.println("Caught an IndexOutOfBoundsException!");
         }
-        printList(list);
-        
     }
 }
 
