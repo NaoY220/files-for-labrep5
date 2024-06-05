@@ -5,25 +5,25 @@ public class MyArrayListTest {
 
     @Test
     public void testAddAndGet() {
-        MyArrayList myArrayList = new MyArrayList();
-        myArrayList.add(1);
-        myArrayList.add(2);
-        myArrayList.add(3);
+        MyArrayList list = new MyArrayList();
+        list.add(23);
+        list.add(0);
+        list.add(-14);
 
-        assertEquals(1, myArrayList.get(0));
-        assertEquals(2, myArrayList.get(1));
-        assertEquals(3, myArrayList.get(2));
+        assertEquals(23, list.get(0));
+        assertEquals(0, list.get(1));
+        assertEquals(-14, list.get(2));
     }
 
     @Test
     public void testIndexOutOfBounds() {
-        MyArrayList myArrayList = new MyArrayList();
-        myArrayList.add(1);
-        myArrayList.add(2);
-        myArrayList.add(3);
+        MyArrayList list2 = new MyArrayList();
+        list2.add(23);
+        list2.add(0);
+        list2.add(-14);
 
         Exception exception = assertThrows(IndexOutOfBoundsException.class, () -> {
-            myArrayList.get(3);
+            list2.get(3);
         });
 
         String expectedMessage = "Index: 3, Size: 3";
